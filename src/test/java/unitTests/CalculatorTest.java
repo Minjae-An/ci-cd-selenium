@@ -43,4 +43,12 @@ class CalculatorTest {
          assertEquals(-1, calculator.getDifference());
      }
 
+    @Test
+    public void testDifference2() {
+        Calculator calculator = new Calculator();
+        calculator.setLeftOperand(0);
+        calculator.setRightOperand(5);
+        assertEquals(-5, calculator.getDifference());
+    }
+
 }
